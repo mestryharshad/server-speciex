@@ -1,0 +1,53 @@
+@import './utilities/main';
+@import './components/header';
+@import './components/side-navigation';
+@import './components/card';
+
+main{
+    width:100%;
+    min-height:100%;
+    // background-image: url('./../images/background.png');
+    background-image:  url('../image/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.sv-referal{
+    background-color: #000;
+    border:2px solid #6a6d70;
+    border-radius: 2px;
+    height: 50px;
+    padding: 10px 30px;
+    &-left{
+        &-txt{
+            margin:0;
+            font-size: 0.875rem;
+        }
+        &-img{
+            max-width: 20px;
+            height: auto;
+            margin-right: 5px;
+        }
+    }
+    &-right{
+        &-link{
+            color: #fff;
+            font-size: 0.875rem;
+            &:hover{
+                color: #fff;
+            }
+        }
+    }
+}
+
+.btn-white{
+    background-color: #fff;
+    color: #000;
+    font-size: 0.875rem;
+    padding: 0.15rem 0.75rem;
+    margin-left: 1rem;
+    &:hover{
+        background-color: #fff;
+        color: #000;
+    }
+}

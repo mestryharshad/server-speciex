@@ -1,0 +1,6 @@
+/* Styles go here */
+@media screen and (max-width: 767px) {
+    .mr-200 {
+      margin-right:200px;
+    }
+  }

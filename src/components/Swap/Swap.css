@@ -1,0 +1,25 @@
+.accountAddressStyle{
+    color: #ffc107;
+    font-size: 12px;
+    font-family: sans-serif;
+}
+@media screen and (min-width:1200px){
+.accountAddressMain{
+    margin-left: 26px;
+    width: 400px !important;
+    text-overflow: ellipsis;
+    overflow-x: hidden;  
+    color: #f1c40f !important;
+}
+}
+
+
+@media screen and (min-width: 320px){
+    .accountAddressMain{
+        margin-left: 26px;
+        text-overflow: ellipsis;
+        overflow-x: hidden;
+        width: 120px;
+        color: #f1c40f !important;
+    }
+}

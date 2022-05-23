@@ -1,0 +1,111 @@
+.sv{
+    background-color: #1b1b1b;
+    z-index: 2;
+    position: relative;
+    @include bp-verysmall{
+        height: 65px;
+    }
+    &-navbar{
+        width:100%;
+        @include bp-medium{
+            justify-content: space-between;
+        }
+        &--light{
+            background-color: transparent;
+        }
+        &-brand{
+            @include bp-verysmall{
+                margin-right:0.5rem;
+            }
+            &-img{
+                width: 150px;
+                height: auto;
+            }
+        }
+        &-nav{
+            width:auto;
+            @include bp-extramedium{
+                width: 90%;
+            }
+            @include bp-medium{
+                width: auto;
+            }
+            &-item{
+                &-link{
+                    color: white;
+                    text-transform: capitalize;
+                    font-size: 1.25rem;
+                    position: relative;
+                    transition: all .5s;
+                    &::after{
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        margin: 0;
+                        width: 0%;
+                        content: '.';
+                        color: transparent;
+                        background: white;
+                        height: 2px;
+                        transition: all .5s;
+                        @include bp-medium{
+                            display: none;
+                        }
+                    }
+                    @include bp-medium{
+                        color: white;
+                    }
+                    &:hover{
+                        color: white;
+                        &::after{
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            right: 0;
+                            margin: auto;
+                            width: 100%;
+                            content: '.';
+                            color: transparent;
+                            background: #5c2271;
+                            height: 2px;
+                        }
+                    }
+                }
+            }
+        }
+        &.navbar-expand-lg {
+            & .navbar-nav{ 
+                & .nav-link{
+                    padding-right: 1.5rem;
+                    padding-left: 1.5rem;
+                }
+            }
+        }
+        &-toggler{
+            padding:0;
+            border:none;
+            &-icon{
+                background-image: url('../../image/index.svg')!important;
+                width:22px;
+                height:22px;
+            }
+        }
+        &-collapse{
+            @include bp-medium{
+                position: fixed;
+                top: 68px;
+                width: calc(100% - 31px );
+                background-color: #5c2271;
+                border-radius: 5px;
+                padding: 0 0 1rem;
+            }
+            @include bp-small{
+                top: 67px;
+            }
+            @include bp-verysmall{
+                top: 81px;
+            }
+        }
+    }
+}

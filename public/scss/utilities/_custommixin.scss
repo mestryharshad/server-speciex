@@ -1,0 +1,60 @@
+// Font Mixin //
+
+@mixin NeutrafaceDisplayLight {
+    font-family: Neutraface Display Light;
+}
+
+@mixin NeutrafaceDisplayMedium {
+  font-family: Neutraface Display Medium;
+}
+
+@mixin NeutrafaceTextBold {
+  font-family: Neutraface Text Bold;
+}
+
+@mixin Neutrafacebold {
+  font-family: Neutra Text;
+}
+
+// Mixin Responsive Breakpoints //
+@mixin bp-extralarge {
+  @media only screen and (max-width: 1366px) {
+    @content;
+  }
+}
+
+@mixin bp-large {
+  @media only screen and (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin bp-extramedium {
+  @media only screen and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin bp-medium {
+  @media only screen and (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin bp-small {
+  @media only screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin bp-verysmall {
+  @media only screen and (max-width: 576px) {
+    @content;
+  }
+}
+
+@mixin bp-extrasmall {
+  @media only screen and (max-width: 360px) {
+    @content;
+  }
+}

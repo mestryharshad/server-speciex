@@ -1,0 +1,59 @@
+.sv-tabs{
+    &-cnt{
+        width: 18%;
+        background-image: url('./../images/menu-bg.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-right: 2px solid #fff;
+        & .sv-nav{
+            width:100%;
+            height:100%;
+            padding: 25px 25px 25px 0;
+            &-list{
+                &-link{
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    border-radius: 0 5px 5px 0px;
+                    padding: 0.5rem 1rem;
+                    position: relative;
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        width: 10px;
+                        height: 9px;
+                        top: 18px;
+                        right: 5px;
+                        background: url("../../images/dropdown.png") 0 0 no-repeat;
+                          background-size: auto;
+                        -webkit-transform: rotate(-88deg);
+                        -moz-transform: rotate(-88deg);
+                        -ms-transform: rotate(-88deg);
+                        -o-transform: rotate(-88deg);
+                        transform: rotate(-88deg);
+                        background-size: 10px;
+                    }
+                    &.active{
+                        background-color: #fff;
+                        & .sv-nav-list-link-txt{
+                            color: #5d2173;
+                            @include NeutrafaceTextBold;
+                        }
+                    }
+                    & img{
+                        width: 20px;
+                        height: auto;
+                        margin-right: 1rem;
+                    }
+                    &-txt{
+                        color:#fff;
+                    }
+                }
+            }
+        }
+    }
+    &-dtls{
+        width:82%;
+        padding: 25px;
+    }
+}
